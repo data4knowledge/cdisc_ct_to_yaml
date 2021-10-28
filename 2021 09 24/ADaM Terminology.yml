@@ -1,0 +1,393 @@
+---
+:version: 2021 09 24
+:owner: CDISC
+:last_identifier: -1
+:items:
+  C81223:
+    :identifier: C81223
+    :label: Date Imputation Flag
+    :submission: DATEFL
+    :synonyms: Date Imputation Flag
+    :definition: 'Date Imputation Flag: Indicates the level of imputation reflected
+      in a date value.'
+    :preferred_term: CDISC ADaM Date Imputation Flag Terminology
+    :items:
+    - :identifier: C81212
+      :label: Day Imputed
+      :submission: D
+      :synonyms: ''
+      :definition: 'Day Imputed: Day is imputed.'
+      :preferred_term: Day Imputed
+    - :identifier: C81211
+      :label: Month Day Imputed
+      :submission: M
+      :synonyms: ''
+      :definition: 'Month Imputed: Month and day are imputed.'
+      :preferred_term: Month Day Imputed
+    - :identifier: C81210
+      :label: Year Month Day Imputed
+      :submission: Y
+      :synonyms: ''
+      :definition: 'Year Imputed: Entire date (year, month and day) is imputed.'
+      :preferred_term: Year Month Day Imputed
+  C81224:
+    :identifier: C81224
+    :label: Derivation Type
+    :submission: DTYPE
+    :synonyms: Derivation Type
+    :definition: 'Derivation Type: Analysis value derivation method.'
+    :preferred_term: CDISC ADaM Derivation Type Terminology
+    :items:
+    - :identifier: C81209
+      :label: Average of Value Derivation Technique
+      :submission: AVERAGE
+      :synonyms: Average
+      :definition: A data derivation or imputation technique which sets the analysis
+        value on the record to the subject's average value over a defined set of records.
+      :preferred_term: Average of Value Derivation Technique
+    - :identifier: C92225
+      :label: Best Case Imputation Technique
+      :submission: BC
+      :synonyms: Best Case
+      :definition: A data derivation or imputation technique which sets the analysis
+        value on the record to the best possible outcome.
+      :preferred_term: Best Case Imputation Technique
+    - :identifier: C81201
+      :label: Baseline Observation Carried Forward Imputation Technique
+      :submission: BLOCF
+      :synonyms: Baseline Observation Carried Forward
+      :definition: A data derivation or imputation technique which sets the analysis
+        value on the record to the subject's non-missing baseline observation.
+      :preferred_term: Baseline Observation Carried Forward Imputation Technique
+    - :identifier: C132340
+      :label: Best Observed Case Imputation Technique
+      :submission: BOC
+      :synonyms: Best Observed Case
+      :definition: A data derivation or imputation technique which sets the analysis
+        value on the record to the best outcome recorded within a subject.
+      :preferred_term: Best Observed Case Imputation Technique
+    - :identifier: C92226
+      :label: Best Observation Carried Forward Imputation Technique
+      :submission: BOCF
+      :synonyms: Best Observation Carried Forward
+      :definition: A data derivation or imputation technique which sets the analysis
+        value on the record to the subject's previous best-case non-missing value.
+      :preferred_term: Best Observation Carried Forward Imputation Technique
+    - :identifier: C139176
+      :label: Extrapolation Imputation Technique
+      :submission: EXTRAP
+      :synonyms: Extrapolation
+      :definition: A data derivation or imputation technique which sets the analysis
+        value on the record to an estimation of a value based on extending a known
+        sequence of values.
+      :preferred_term: Extrapolation Imputation Technique
+    - :identifier: C170546
+      :label: One Half of Lower Limit of Quantification Derivation Technique
+      :submission: HALFLLOQ
+      :synonyms: One Half of Lower Limit of Quantification
+      :definition: A data derivation or imputation technique which sets the analysis
+        value on the record to one half of the lower limit of quantification of a
+        test.
+      :preferred_term: One Half of Lower Limit of Quantification Derivation Technique
+    - :identifier: C81208
+      :label: Interpolation Imputation Technique
+      :submission: INTERP
+      :synonyms: Interpolation
+      :definition: A data derivation or imputation technique which sets the analysis
+        value on the record to a function of known values to estimate a value within
+        the range.
+      :preferred_term: Interpolation Imputation Technique
+    - :identifier: C105701
+      :label: Detection Limit
+      :submission: LLOD
+      :synonyms: Lower Limit of Detection
+      :definition: A data derivation or imputation technique which sets the analysis
+        value on the record to the lower limit of detection of a test.
+      :preferred_term: Detection Limit
+    - :identifier: C170543
+      :label: Lower Limit of Quantification Derivation Technique
+      :submission: LLOQ
+      :synonyms: Lower Limit of Quantification
+      :definition: A data derivation or imputation technique which sets the analysis
+        value on the record to the lower limit of quantification of a test.
+      :preferred_term: Lower Limit of Quantification Derivation Technique
+    - :identifier: C81198
+      :label: Last Observation Carried Forward Imputation Technique
+      :submission: LOCF
+      :synonyms: Last Observation Carried Forward
+      :definition: A data derivation or imputation technique which sets the analysis
+        value on the record to the subject's previous non-missing value.
+      :preferred_term: Last Observation Carried Forward Imputation Technique
+    - :identifier: C132341
+      :label: Last Observed Value Imputation Technique
+      :submission: LOV
+      :synonyms: Last Observed Value
+      :definition: A data derivation or imputation technique which sets the analysis
+        value on the record to the subject's last recorded non-missing observation.
+      :preferred_term: Last Observed Value Imputation Technique
+    - :identifier: C132342
+      :label: Last Value Prior to Dosing Imputation Technique
+      :submission: LVPD
+      :synonyms: Last Value Prior to Dosing
+      :definition: A data derivation or imputation technique which sets the analysis
+        value on the record to the subject's last observed value prior to the start
+        of study treatment.
+      :preferred_term: Last Value Prior to Dosing Imputation Technique
+    - :identifier: C82868
+      :label: Maximum Value Derivation Technique
+      :submission: MAXIMUM
+      :synonyms: Maximum
+      :definition: A data derivation or imputation technique which sets the analysis
+        value on the record to the subject's maximum value over a defined set of records.
+      :preferred_term: Maximum Value Derivation Technique
+    - :identifier: C82867
+      :label: Minimum Value Derivation Technique
+      :submission: MINIMUM
+      :synonyms: Minimum
+      :definition: A data derivation or imputation technique which sets the analysis
+        value on the record to the subject's minimum value over a defined set of records.
+      :preferred_term: Minimum Value Derivation Technique
+    - :identifier: C53331
+      :label: Maximum Likelihood Estimation
+      :submission: ML
+      :synonyms: Maximum Likelihood
+      :definition: A data derivation or imputation technique which sets the analysis
+        value on the record to the estimate that maximizes the probability of observing
+        what has in fact been observed.
+      :preferred_term: Maximum Likelihood Estimation
+    - :identifier: C81204
+      :label: Mean of Other Group Imputation Technique
+      :submission: MOTH
+      :synonyms: Mean of Other Group
+      :definition: A data derivation or imputation technique which sets the analysis
+        value on the record to the mean value from a comparator or reference group.
+      :preferred_term: Mean of Other Group Imputation Technique
+    - :identifier: C81207
+      :label: Mean Observed Value in a Group Imputation Technique
+      :submission: MOV
+      :synonyms: Mean Observed Value in a Group
+      :definition: A data derivation or imputation technique which sets the analysis
+        value on the record to the mean value observed in a group of subjects.
+      :preferred_term: Mean Observed Value in a Group Imputation Technique
+    - :identifier: C170545
+      :label: Phantom Record Imputation Technique
+      :submission: PHANTOM
+      :synonyms: Phantom Record
+      :definition: A technique that creates a record with a missing analysis value
+        when there is no observed record for a given analysis visit or analysis timepoint.
+      :preferred_term: Phantom Record Imputation Technique
+    - :identifier: C81205
+      :label: Penultimate Observation Carried Forward Imputation Technique
+      :submission: POCF
+      :synonyms: Penultimate Observation Carried Forward
+      :definition: A data derivation or imputation technique which sets the analysis
+        value on the record to the subject's next-to-last non-missing value.
+      :preferred_term: Penultimate Observation Carried Forward Imputation Technique
+    - :identifier: C81200
+      :label: Screening Observation Carried Forward Imputation Technique
+      :submission: SOCF
+      :synonyms: Screening Observation Carried Forward
+      :definition: A data derivation or imputation technique which sets the analysis
+        value on the record to the subject's non-missing screening observation.
+      :preferred_term: Screening Observation Carried Forward Imputation Technique
+    - :identifier: C174264
+      :label: Upper Limit of Detection Imputation Technique
+      :submission: ULOD
+      :synonyms: Upper Limit of Detection
+      :definition: A data derivation or imputation technique which sets the analysis
+        value on the record to the upper limit of detection of a test.
+      :preferred_term: Upper Limit of Detection Imputation Technique
+    - :identifier: C170544
+      :label: Upper Limit of Quantification Derivation Technique
+      :submission: ULOQ
+      :synonyms: Upper Limit of Quantification
+      :definition: A data derivation or imputation technique which sets the analysis
+        value on the record to the upper limit of quantification of a test.
+      :preferred_term: Upper Limit of Quantification Derivation Technique
+    - :identifier: C81203
+      :label: Worst Case Imputation Technique
+      :submission: WC
+      :synonyms: Worst Case
+      :definition: A data derivation or imputation technique which sets the analysis
+        value on the record to the worst possible outcome.
+      :preferred_term: Worst Case Imputation Technique
+    - :identifier: C132343
+      :label: Worst Observed Case Imputation Technique
+      :submission: WOC
+      :synonyms: Worst Observed Case
+      :definition: A data derivation or imputation technique which sets the analysis
+        value on the record to the worst recorded outcome within a subject.
+      :preferred_term: Worst Observed Case Imputation Technique
+    - :identifier: C81199
+      :label: Worst Observation Carried Forward Imputation Technique
+      :submission: WOCF
+      :synonyms: Worst Observed Value Carried Forward
+      :definition: A data derivation or imputation technique which sets the analysis
+        value on the record to the subject's worst-case non-missing observation.
+      :preferred_term: Worst Observation Carried Forward Imputation Technique
+    - :identifier: C81206
+      :label: Worst Observed Value in a Group Imputation Technique
+      :submission: WOV
+      :synonyms: Worst Observed Value in a Group
+      :definition: A data derivation or imputation technique which sets the analysis
+        value on the record to the worst value observed in a group of subjects.
+      :preferred_term: Worst Observed Value in a Group Imputation Technique
+  C172334:
+    :identifier: C172334
+    :label: Generalized Anxiety Disorder - 7 Version 2 Questionnaire Parameter Code
+    :submission: GAD02PC
+    :synonyms: Generalized Anxiety Disorder - 7 Version 2 Questionnaire Parameter
+      Code
+    :definition: A parameter code codelist for the Generalized Anxiety Disorder -
+      7 Version 2 Questionnaire (GAD-7 V2) to support the calculation of total score
+      in ADaM.
+    :preferred_term: CDISC ADaM Generalized Anxiety Disorder-7 Version 2 Questionnaire
+      Parameter Code Terminology
+    :items:
+    - :identifier: C172451
+      :label: Generalized Anxiety Disorder - 7 Version 2 - Analysis
+      :submission: GAD02TS
+      :synonyms: GAD02-Total Score - Analysis
+      :definition: Generalized Anxiety Disorder - 7 Version 2 - Total score used for
+        analysis.
+      :preferred_term: Generalized Anxiety Disorder - 7 Version 2 - Analysis
+  C172335:
+    :identifier: C172335
+    :label: Generalized Anxiety Disorder - 7 Version 2 Questionnaire Parameter Name
+    :submission: GAD02PN
+    :synonyms: Generalized Anxiety Disorder - 7 Version 2 Questionnaire Parameter
+      Name
+    :definition: A parameter name codelist for the Generalized Anxiety Disorder -
+      7 Version 2 Questionnaire (GAD-7 V2) to support the calculation of total score
+      in ADaM.
+    :preferred_term: CDISC ADaM Generalized Anxiety Disorder-7 Version 2 Questionnaire
+      Parameter Name Terminology
+    :items:
+    - :identifier: C172451
+      :label: Generalized Anxiety Disorder - 7 Version 2 - Analysis
+      :submission: GAD02-Total Score - Analysis
+      :synonyms: GAD02-Total Score - Analysis
+      :definition: Generalized Anxiety Disorder - 7 Version 2 - Total score used for
+        analysis.
+      :preferred_term: Generalized Anxiety Disorder - 7 Version 2 - Analysis
+  C158114:
+    :identifier: C158114
+    :label: Geriatric Depression Scale Short Form Questionnaire Parameter Code
+    :submission: GDS02PC
+    :synonyms: Geriatric Depression Scale Short Form Questionnaire Parameter Code
+    :definition: A parameter code codelist for the Geriatric Depression Scale Short
+      Form questionnaire (GDS02) to support the calculation of total score in ADaM.
+    :preferred_term: CDISC ADaM Geriatric Depression Scale Short Form Questionnaire
+      Parameter Code Terminology
+    :items:
+    - :identifier: C158155
+      :label: Geriatric Depression Scale Short Form - Total Score
+      :submission: GDS02TS
+      :synonyms: GDS02-Total Score - Analysis
+      :definition: Geriatric Depression Scale Short Form - Total score used for analysis.
+      :preferred_term: Geriatric Depression Scale Short Form - Total Score
+  C158115:
+    :identifier: C158115
+    :label: Geriatric Depression Scale Short Form Questionnaire Parameter Name
+    :submission: GDS02PN
+    :synonyms: Geriatric Depression Scale Short Form Questionnaire Parameter Name
+    :definition: A parameter name codelist for the Geriatric Depression Scale Short
+      Form questionnaire (GDS02) to support the calculation of total score in ADaM.
+    :preferred_term: CDISC ADaM Geriatric Depression Scale Short Form Questionnaire
+      Parameter Name Terminology
+    :items:
+    - :identifier: C158155
+      :label: Geriatric Depression Scale Short Form - Total Score
+      :submission: GDS02-Total Score - Analysis
+      :synonyms: GDS02-Total Score - Analysis
+      :definition: Geriatric Depression Scale Short Form - Total score used for analysis.
+      :preferred_term: Geriatric Depression Scale Short Form - Total Score
+  C81225:
+    :identifier: C81225
+    :label: Parameter Type
+    :submission: PARAMTYP
+    :synonyms: Parameter Type
+    :definition: 'Parameter Type: Indicates whether the parameter is derived as a
+      function of one or more other parameters.'
+    :preferred_term: CDISC ADaM Parameter Type Terminology
+    :items:
+    - :identifier: C81197
+      :label: Derived Flag
+      :submission: DERIVED
+      :synonyms: ''
+      :definition: 'Derived: Indicates that a parameter is derived as a function of
+        one or more other parameters.'
+      :preferred_term: Derived Flag
+  C165644:
+    :identifier: C165644
+    :label: Pool for Integration
+    :submission: POOLINT
+    :synonyms: Pool for Integration
+    :definition: Terminology relevant to the name of the Pool, often defined in the
+      integrated statistical analysis plan, which identifies the combination of subjects'
+      clinical trial experience and will be the focus of the integrated analysis.
+    :preferred_term: CDISC ADaM Pool for Integration Terminology
+    :items:
+    - :identifier: C165858
+      :label: Overall Pooled Data
+      :submission: OVERALL
+      :synonyms: ''
+      :definition: The pool that includes data across all studies within which the
+        subject has participated, used for the overall integrated analysis.
+      :preferred_term: Overall Pooled Data
+  C124296:
+    :identifier: C124296
+    :label: Subject Trial Status
+    :submission: SBJTSTAT
+    :synonyms: Subject Trial Status
+    :definition: Indicates the status of the subject in the trial.
+    :preferred_term: CDISC ADaM Subject Trial Status Terminology
+    :items:
+    - :identifier: C25250
+      :label: Complete
+      :submission: COMPLETED
+      :synonyms: ''
+      :definition: To possess every necessary or normal part or component or step;
+        having come or been brought to a conclusion. (NCI)
+      :preferred_term: Complete
+    - :identifier: C25484
+      :label: Discontinue
+      :submission: DISCONTINUED
+      :synonyms: ''
+      :definition: To stop or end, permanently or temporarily.
+      :preferred_term: Discontinue
+    - :identifier: C53279
+      :label: Continue
+      :submission: ONGOING
+      :synonyms: Continuous
+      :definition: Remain in force or carry on without letup; keep or maintain in
+        unaltered condition; exist in time or space without stop or interruption.
+        (NCI)
+      :preferred_term: Continue
+  C81226:
+    :identifier: C81226
+    :label: Time Imputation Flag
+    :submission: TIMEFL
+    :synonyms: Time Imputation Flag
+    :definition: 'Time Imputation Flag: Indicates the level of imputation reflected
+      in a time value.'
+    :preferred_term: CDISC ADaM Time Imputation Flag Terminology
+    :items:
+    - :identifier: C81213
+      :label: Hours Minutes Seconds Imputed
+      :submission: H
+      :synonyms: ''
+      :definition: 'Hours Imputed: Entire time (hours, minutes and seconds) is imputed.'
+      :preferred_term: Hours Minutes Seconds Imputed
+    - :identifier: C81214
+      :label: Minutes Seconds Imputed
+      :submission: M
+      :synonyms: ''
+      :definition: 'Minutes Imputed: Minutes and seconds are imputed.'
+      :preferred_term: Minutes Seconds Imputed
+    - :identifier: C81215
+      :label: Seconds Imputed
+      :submission: S
+      :synonyms: ''
+      :definition: 'Seconds Imputed: Seconds are imputed.'
+      :preferred_term: Seconds Imputed
