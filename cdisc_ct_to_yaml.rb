@@ -24,12 +24,13 @@ end
 
 version = ARGV.shift
 Dir.chdir(version)
+version_date = Date.parse(version)
 files = Dir.glob("*.xls")
 files.each do |file|
   puts "Converting '#{file}' to YAML as version '#{version}'."
   workbook = Roo::Spreadsheet.open(file)
   workbook.default_sheet = workbook.sheets.last
-  records = { version: "#{version}", owner: 'CDISC', last_identifier: -1, items: {} }
+  records = { version: "#{version_date.strftime("%F")}", owner: 'CDISC', last_identifier: 0, items: {} }
   ((workbook.first_row + 1) .. workbook.last_row).each do |row|
     data = workbook.row(row)
   puts "Data #{data}"  
